@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Pricing Rendang Tempe Koro Pedang</title>
+</head>
+<body>
+  <h2>Dynamic Pricing Produk</h2>
+
+  <h3>Tambah Data Produk</h3>
+  <form id="produk-form">
+    <input type="text" name="kodeSampel" placeholder="Kode Sampel" required />
+    <input type="number" name="pH" placeholder="pH Produk" step="0.1" required />
+    <input type="text" name="warnaIndikator" placeholder="Warna Indikator" required />
+    <input type="number" name="jumlahMikroba" placeholder="Jumlah Mikroba (CFU/g)" required />
+    <input type="number" name="suhuPenyimpanan" placeholder="Suhu (°C)" required />
+    <input type="text" name="kategoriKelayakan" placeholder="Kategori Kelayakan" required />
+    <input type="number" name="harga" placeholder="Harga (Rp)" required />
+    <button type="submit">Simpan</button>
+  </form>
+
+  <h3>Data Produk</h3>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Kode Sampel</th>
+        <th>pH</th>
+        <th>Warna Indikator</th>
+        <th>Jumlah Mikroba</th>
+        <th>Suhu Penyimpanan</th>
+        <th>Kategori Kelayakan</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody id="produk-body"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
